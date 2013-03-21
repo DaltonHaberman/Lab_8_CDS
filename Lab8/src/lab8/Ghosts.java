@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 /**
  * Calin Gilliard
+ * 
+ * Runs but no AI
  */
 public class Ghosts 
 {
