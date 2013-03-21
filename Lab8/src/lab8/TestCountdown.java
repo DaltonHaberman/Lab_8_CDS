@@ -15,5 +15,12 @@ public class TestCountdown {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Countdown test = new Countdown();
+        String[] asdf = test.generateLetters();
+        
+        System.out.println(asdf);
+        
+        
+        
     }
 }
