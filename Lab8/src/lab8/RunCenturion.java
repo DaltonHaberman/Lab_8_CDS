@@ -23,11 +23,11 @@ public class RunCenturion
 				word=wordIn.nextLine();
 				inDictionary = inDic(word); //tests if word is in the dictionary
 				if(inDictionary==true){  //if word is in Dictionary, add points
-					player1Score=player1.points(player1Score, word);
+					player1Score=player1.points(player1Score, word);  //adds points
 				}	
 			}
 		}
-		
+		//attempt at making computer portion
 		while(player2Score<100){
 			String compWord = compWord();
 			System.out.println("Enter a word");
@@ -38,7 +38,7 @@ public class RunCenturion
 		System.out.println("Player 1 score is: " + player1Score);
 		System.out.println("Player 2 score is: " + player2Score);
    }
-	
+	//tests if word is in dictionary
 	public static boolean inDic(String word) throws FileNotFoundException{
 		boolean inDic=false;
 		File file = new File("corncob_lowercase.txt");
@@ -52,7 +52,7 @@ public class RunCenturion
 		
 		return inDic;
 	}
-	
+	//calculates best possible word for computer input
 	public static String compWord() throws FileNotFoundException{
 		Centurion wordObject = new Centurion();
 		File file2 = new File("corncob_lowercase.txt");

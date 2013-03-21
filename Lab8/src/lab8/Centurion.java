@@ -12,25 +12,25 @@ public class Centurion
 	}
 	
 	public int points(int score, String word){
-		score+=wordValue(word);
+		score+=wordValue(word);         //calculates score
 		return score;
 	}
-	
+	//calculates value of word in
 	public int wordValue(String word){
 		int wordTotal;
 		String [] wordArray = new String[3];
 		
-		wordArray[0]=word.substring(0, 1);
+		wordArray[0]=word.substring(0, 1);  //seperates word into array
 		wordArray[1]=word.substring(1, 2);
 		wordArray[2]=word.substring(2);
 		
-		wordTotal=letterValue(wordArray[0])
-					+letterValue(wordArray[1])
+		wordTotal=letterValue(wordArray[0])   //calcualtes value of each letter and totals
+					+letterValue(wordArray[1]) 
 					+letterValue(wordArray[2]);
 		
 		return wordTotal;
 	}	
-	
+	//assigns each letter the point value
 	public int letterValue(String letter){
 		int point=0;
 		if(letter.equals("a")){
